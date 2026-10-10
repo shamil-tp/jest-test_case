@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server",
-    "test:integration": "vitest run tests/integration"
+    "test:integration": "vitest run --globals tests/integration"
   },
   "keywords": [],
   "author": "",
