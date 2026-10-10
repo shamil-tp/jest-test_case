@@ -9,3 +9,12 @@ describe('API Integration Tests', () => {
     expect(res.body).toEqual({ status: 'ok' });
   });
 });
+
+describe('GET / Endpoint', () => {
+  it('should return status 200 and text "hello"', async () => {
+    const res = await request(app).get('/');
+
+    expect(res.status).toBe(200);
+    expect(res.text).toBe('hello');
+  });
+});
